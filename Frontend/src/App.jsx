@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
-
+import "./index.css";
+import "./App.css";
 import books from "./data/books";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";

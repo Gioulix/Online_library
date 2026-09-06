@@ -90,7 +90,7 @@ function Cart({ onClose }) {
                 <strong>${cartTotal.toFixed(2)}</strong>
               </div>
 
-              <p className="shipping-info">Free shipping on orders over €50</p>
+              <p className="shipping-info">Free shipping on orders over $50</p>
 
               <button className="checkout-button">Proceed to Checkout</button>
             </div>
