@@ -30,7 +30,7 @@ function Cart({ onClose }) {
 
         {cart.length === 0 ? (
           <div className="empty-cart">
-            <div className="empty-cart-icon">🛒</div>
+            <div className="empty-cart-icon">|Cart|</div>
 
             <h3>Your cart is empty</h3>
 

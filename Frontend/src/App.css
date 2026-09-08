@@ -1,9 +1,13 @@
+/*----------------------------------
+                 Navbar
+  ----------------------------------*/
+
 .navbar {
   position: sticky;
   top: 0;
   z-index: 100;
 
-  background: rgba(140, 236, 72, 0.95);
+  background: rgba(247, 239, 223, 0.95);
   border-bottom: 1px solid var(#e2af6c);
 
   backdrop-filter: blur(12px);
@@ -39,8 +43,8 @@
   width: 39px;
   height: 39px;
 
-  background: var(white);
-  color: rgb(243, 237, 179);
+  background: var(--primary);
+  color: white;
 
   border-radius: 10px;
 
@@ -52,7 +56,258 @@
   align-items: center;
   gap: 28px;
 
-  color: var(#bfa36a);
+  color: var(--text);
   font-size: 0.95rem;
   font-weight: 500;
+}
+
+.nav-links a {
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: 210px;
+  height: 42px;
+
+  padding: 0 13px;
+
+  background: var(white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  color: var(#645c51);
+}
+
+.search-box input {
+  width: 100%;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: var(--dark);
+}
+
+.search-box input::placeholder {
+  color: var(#5a4d43);
+}
+
+.cart-button,
+.menu-button {
+  position: relative;
+  display: grid;
+  place-items: center;
+
+  width: 42px;
+  height: 42px;
+
+  box-sizing: border-box;
+  padding: 0;
+
+  background: var(white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  font-size: 1.1rem;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.cart-button:hover,
+.menu-button:hover {
+  transform: translate3d(-2px, -2px, -2px);
+  border-color: var(--primary);
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+
+  min-width: 20px;
+  height: 20px;
+
+  padding: 0 5px;
+
+  display: grid;
+  place-items: center;
+
+  background: var(--primary);
+  color: white;
+
+  border-radius: 50%;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.menu-button {
+  display: block;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .search-box {
+    width: min(210px, 35vw);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    width: calc(100% - 24px);
+    gap: 12px;
+  }
+
+  .search-box {
+    display: none;
+  }
+}
+
+/*----------------------------------
+                 Hero
+  ----------------------------------*/
+
+.hero {
+  padding: 90px 20px 110px;
+
+  background:
+    radial-gradient(
+      circle at 85% 40%,
+      rgba(200, 150, 70, 0.12),
+      transparent 30%
+    ),
+    var(--cream);
+}
+
+.hero-content {
+  width: min(1240px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+
+  gap: 70px;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero-label,
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--primary);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.hero-text h1 {
+  margin-bottom: 25px;
+  font-family: Georgia, serif;
+}
+
+.hero-text h1 span {
+  color: var(--primary);
+}
+
+.hero-text > p {
+  max-width: 560px;
+
+  color: var(--text);
+
+  font-size: 1.08rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+
+  margin-top: 32px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 14px 23px;
+
+  border-radius: 10px;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.primary-button {
+  background: var(--primary);
+  color: white;
+}
+
+.primary-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.secondary-button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--dark);
+}
+
+.secondary-button:hover {
+  background: var(white);
+  transform: translateY(-2px);
+}
+
+.hero-stats {
+  display: flex;
+  gap: 40px;
+
+  margin-top: 50px;
+}
+
+.hero-stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stats strong {
+  font-family: Georgia, serif;
+  font-size: 1.45rem;
+}
+
+.hero-stats span {
+  color: var(--muted);
+  font-size: 0.82rem;
 }

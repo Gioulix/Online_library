@@ -35,6 +35,10 @@ function NavBar({ search, setSearch, onCartClick }) {
             Cart
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </button>
+
+          <button className="menu-button" aria-label="Open navigation menu">
+            Ξ
+          </button>
         </div>
       </div>
     </nav>

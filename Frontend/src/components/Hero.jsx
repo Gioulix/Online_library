@@ -22,7 +22,7 @@ function Hero({ onBrowseClick }) {
               Browse Books
             </button>
 
-            <button className="Secondary-button" onClick={onBrowseClick}>
+            <button className="secondary-button" onClick={onBrowseClick}>
               Explore Categories
             </button>
           </div>

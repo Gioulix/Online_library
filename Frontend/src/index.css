@@ -1,3 +1,18 @@
+/*----------------------------------
+              Global
+  ----------------------------------*/
+
+:root {
+  --primary: #87552f;
+  --primary-dark: #70472b;
+  --cream: #fffaf1;
+  --dark: #1b1815;
+  --text: #413933;
+  --border: #d5bb96;
+  --muted: #8c8279;
+  --shadow: 0 12px 40px rgba(40, 27, 14, 0.09);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,8 +21,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  background: var(#bfa36a);
-  color: var(rgb(77, 42, 42));
+  background: var(--cream);
+  color: var(--dark);
 
   font-family: Arial, Helvetica, sans-serif;
 
@@ -24,7 +39,8 @@ h1,
 h2,
 h3,
 h4 {
-  color: black;
+  color: var(--dark);
+  line-height: 1.2;
 }
 
 h1 {
@@ -50,7 +66,7 @@ button {
 button:focus-visible,
 input:focus-visible,
 a:focus-visible {
-  outline: 3px solid rgba(140, 95, 60, 0, 4);
+  outline: 3px solid rgba(140, 95, 60, 0.4);
   outline-offset: 3px;
 }
 
@@ -60,7 +76,7 @@ img {
 }
 
 ::selection {
-  background: var(rgb(105, 188, 37));
+  background: var(--border);
   color: var(white);
 }
 
