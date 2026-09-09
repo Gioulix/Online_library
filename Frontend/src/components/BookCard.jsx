@@ -18,7 +18,7 @@ function BookCard({ book }) {
           className="wishlist-button"
           aria-label={`Add ${book.title} to wishlist`}
         >
-          Add to wishlist
+          ♥
         </button>
       </div>
 

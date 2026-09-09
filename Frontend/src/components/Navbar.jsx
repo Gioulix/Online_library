@@ -32,7 +32,7 @@ function NavBar({ search, setSearch, onCartClick }) {
             onClick={onCartClick}
             aria-label="View cart"
           >
-            Cart
+            🛒
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </button>
 
