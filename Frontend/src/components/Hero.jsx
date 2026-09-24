@@ -56,7 +56,7 @@ function Hero({ onBrowseClick }) {
               <div className="book book-back">READ</div>
 
               <div className="book book-middle">MORE</div>
-
+              <br />
               <div className="book book-front">
                 <div className="book-cover-title">
                   THE

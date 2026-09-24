@@ -7,7 +7,7 @@ function NavBar({ search, setSearch, onCartClick }) {
     <nav className="navbar">
       <div className="nav-container">
         <a href="#home" className="nav-logo">
-          BookStore
+          BookHaven
         </a>
 
         <div className="nav-links">

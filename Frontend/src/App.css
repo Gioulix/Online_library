@@ -504,3 +504,176 @@
   background: var(--primary-dark);
   transform: scale(1.05);
 }
+
+/*----------------------------------
+           Null rearch result
+  ----------------------------------*/
+.empty-results {
+  padding: 80px 20px;
+  text-align: center;
+  background: white;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.empty-results > div {
+  margin-bottom: 10px;
+
+  font-size: 2.5rem;
+}
+
+.empty-results p {
+  color: var(--muted);
+}
+
+/*----------------------------------
+           Newsletter
+  ----------------------------------*/
+
+.newsletter {
+  width: min(1240px, calc(100% - 40px));
+
+  margin: 0 auto 100px;
+
+  padding: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  background: #3d3434;
+  color: white;
+
+  border-radius: 18px;
+}
+
+.newsletter h2 {
+  margin-bottom: 12px;
+
+  color: white;
+
+  font-family: Georgia, serif;
+}
+
+.newsletter p {
+  max-width: 570px;
+
+  color: #d0bdbd;
+}
+
+.newsletter .section-label {
+  color: #b99d38;
+}
+
+.newsletter-form {
+  display: flex;
+
+  min-width: 360px;
+}
+
+.newsletter-form input {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 0;
+  outline: 0;
+
+  border-radius: 9px 0 0 9px;
+}
+
+.newsletter-form button {
+  padding: 0 20px;
+
+  background: var(--primary);
+  color: white;
+
+  border-radius: 0 9px 9px 0;
+
+  font-weight: 700;
+}
+
+/*----------------------------------
+                Footer
+  ----------------------------------*/
+
+.footer {
+  padding: 70px 20px 20px 25px;
+
+  background: #474444;
+  color: #d6bd94;
+}
+
+.footer-content {
+  width: min(1240px, 100%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 2fr repeat(3, 1fr);
+
+  gap: 60px;
+}
+
+.footer .logo {
+  color: white;
+}
+
+.footer-brand p {
+  max-width: 330px;
+
+  margin-top: 18px;
+
+  color: #786c62;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-column h4 {
+  margin-bottom: 8px;
+
+  color: white;
+
+  font-size: 0.9rem;
+}
+
+.footer-column a {
+  color: #917c6a;
+
+  font-size: 0.8rem;
+
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  width: min(1240px, 100%);
+
+  margin: 55px auto 0;
+  padding-top: 22px;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px solid #4b3f32;
+
+  color: #706253;
+
+  font-size: 0.8rem;
+}
+
+.footer-bottom div {
+  display: flex;
+  gap: 20px;
+}
