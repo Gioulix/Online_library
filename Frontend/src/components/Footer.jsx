@@ -4,7 +4,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-brand">
           <a href="#home" className="logo">
-            <span>Book</span>Store
+            <span>Bookstore</span>
             <span>BOOKHAVEN</span>
           </a>
 

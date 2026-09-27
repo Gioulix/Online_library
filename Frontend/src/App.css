@@ -833,3 +833,152 @@
 .remove-item:hover {
   color: #dd4b38;
 }
+
+/*----------------------------------
+            Responsive
+  ----------------------------------*/
+
+@media (max-width: 1050px) {
+  .nav-links {
+    display: none;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero-content {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    padding-top: 60px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text > p {
+    margin-inline: auto;
+  }
+
+  .hero-buttons,
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    min-height: 430px;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .newsletter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsletter-form {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .nav-container {
+    width: calc(100% - 25px);
+  }
+
+  .search-box {
+    width: 150px;
+  }
+
+  .logo span:last-child {
+    display: none;
+  }
+
+  .hero {
+    padding-bottom: 70px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+
+  .hero-stats {
+    gap: 22px;
+  }
+
+  .hero-visual {
+    min-height: 370px;
+  }
+
+  .hero-circle {
+    width: 290px;
+    height: 290px;
+  }
+
+  .book-stack {
+    transform: scale(0.78) rotate(-5deg);
+  }
+
+  .card-one {
+    right: 0;
+    bottom: 25px;
+  }
+
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+  }
+
+  .view-all-button {
+    display: none;
+  }
+
+  .newsletter {
+    padding: 35px 25px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    min-height: 48px;
+
+    border-radius: 8px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
